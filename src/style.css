@@ -53,3 +53,20 @@ h1 a {
   font-family: var(--myfont);
   color: black;
 }
+
+.container-footer {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+footer {
+  position: absolute;
+  border: 2px solid gray;
+  padding: 0 20px;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  text-align: start;
+}
