@@ -2,7 +2,46 @@
   font-family: sans-serif;
 }
 
+.container-main {
+  padding-left: 3%;
+  padding-right: 3%; 
+}
 
+.card {
+  width: 30%;
+  padding: 15px 30px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-more {
+  display: flex;
+  flex-direction: column;
+}
+
+.like {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.like > i{
+  padding-left: 17px;
+}
+
+.card-button {
+  margin: 8px 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  box-shadow: 3px 3px black;
+}
 
 .container-footer {
   padding-left: 2.5%;
