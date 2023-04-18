@@ -2,14 +2,14 @@ import fetchList from './fetchList.js';
 
 const displayList = async () => {
   const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
-  const urli = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/gXvWpQoPOY3Cj1qr1TRg/likes'
+  const urli = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/gXvWpQoPOY3Cj1qr1TRg/likes';
 
   const category = await fetchList(url);
   const likesdata = await fetchList(urli);
 
   function displayLike(id) {
-    const itemsID = likesdata.filter(element => element.item_id === id)
-    return itemsID[0].likes?itemsID[0].likes:0;
+    const itemsID = likesdata.filter((element) => element.item_id === id);
+    return itemsID[0].likes ? itemsID[0].likes : 0;
   }
 
   const cardContainer = document.querySelector('.container-cards');
