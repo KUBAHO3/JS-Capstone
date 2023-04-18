@@ -7,6 +7,11 @@ const displayList = async () => {
   const category = await fetchList(url);
   const likesdata = await fetchList(urli);
 
+  function displayLike(id) {
+    const itemsID = likesdata.filter(element => element.item_id === id)
+    return itemsID[0].likes?itemsID[0].likes:0;
+  }
+
   const cardContainer = document.querySelector('.container-cards');
   cardContainer.innerHTML = '';
   const cards = category.categories.map((data) => `
@@ -18,7 +23,7 @@ const displayList = async () => {
     </p>
     <div class="like">
         <i class="fa-regular fa-heart"></i>
-        <span class="like-count">10 likes</span>
+        <span class="like-count">${displayLike(data.idCategory)} likes</span>
     </div>
 </div>
 <div class="card-more">
