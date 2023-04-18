@@ -100,6 +100,67 @@ h1 a {
   cursor: pointer;
   padding: 5px 10px;
   box-shadow: 3px 3px black;
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 2;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  border-radius: 20px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  width: 45%;
+  max-width: 50%;
+  padding: 24px;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-button {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comments {
+  font-family: var(--myfont);
+  font-size: 24px;
+}
+
+.add-comment {
+  font-family: var(--myfont);
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.received {
+  width: fit-content;
+  display: flex;
+  margin: auto;
+  font-family: var(--myfont);
 }
 
 .container-footer {
