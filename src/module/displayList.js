@@ -1,14 +1,13 @@
 import fetchList from './fetchList.js';
 
 const displayList = async () => {
-let url = `https://www.themealdb.com/api/json/v1/1/categories.php`
+  const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
-const category = await fetchList(url);
-console.log("data: ",category.categories);
+  const category = await fetchList(url);
 
-const cardContainer = document.querySelector('.container-cards');
-cardContainer.innerHTML = ''
-const cards = category.categories.map((data) => `
+  const cardContainer = document.querySelector('.container-cards');
+  cardContainer.innerHTML = '';
+  const cards = category.categories.map((data) => `
 <div class="card">
 <img src=${data.strCategoryThumb} alt="The dish category">
 <div class="card-about">
@@ -26,8 +25,7 @@ const cards = category.categories.map((data) => `
 </div>
 </div>
 `).join('');
-cardContainer.innerHTML = cards;
-
+  cardContainer.innerHTML = cards;
 };
 
 export default displayList;
