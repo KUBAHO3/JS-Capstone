@@ -6,6 +6,7 @@
 
 body {
   box-sizing: border-box;
+
   /* overflow: hidden; */
   margin: auto;
 }
@@ -56,7 +57,7 @@ h1 a {
 
 .container-main {
   padding-left: 3%;
-  padding-right: 3%; 
+  padding-right: 3%;
 }
 
 .container-cards {
@@ -90,7 +91,7 @@ h1 a {
   margin: 16px 0;
 }
 
-.like > i{
+.like > i {
   padding-left: 17px;
 }
 
@@ -110,6 +111,7 @@ footer {
   position: absolute;
   border: 2px solid gray;
   padding: 0 20px;
+
   /* bottom: 0; */
   width: 100%;
   right: 0;
