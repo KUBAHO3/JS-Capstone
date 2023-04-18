@@ -1,4 +1,3 @@
 # .gitignore
 node_modules/
-src/module/displayList.js
 src/module/fetchList.js
