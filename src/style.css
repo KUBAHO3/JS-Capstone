@@ -6,7 +6,8 @@
 
 body {
   box-sizing: border-box;
-  overflow: hidden;
+
+  /* overflow: hidden; */
   margin: auto;
 }
 
@@ -53,6 +54,52 @@ h1 a {
   font-family: var(--myfont);
   color: black;
 }
+
+.container-main {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+
+.card {
+  width: 30%;
+  padding: 15px 30px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-more {
+  display: flex;
+  flex-direction: column;
+}
+
+.like {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.like > i {
+  padding-left: 17px;
+}
+
+.card-button {
+  margin: 8px 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  box-shadow: 3px 3px black;
 
 .modal {
   position: fixed;
@@ -125,7 +172,8 @@ footer {
   position: absolute;
   border: 2px solid gray;
   padding: 0 20px;
-  bottom: 0;
+
+  /* bottom: 0; */
   width: 100%;
   right: 0;
   left: 0;
