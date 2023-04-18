@@ -2,3 +2,19 @@
   font-family: sans-serif;
 }
 
+.container-footer {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+footer {
+  position: absolute;
+  border: 2px solid gray;
+  padding: 0 20px;
+  bottom: 0em;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  text-align: start;
+}
