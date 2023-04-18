@@ -2,8 +2,10 @@ import fetchList from './fetchList.js';
 
 const displayList = async () => {
   const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
+  const urli = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/gXvWpQoPOY3Cj1qr1TRg/likes'
 
   const category = await fetchList(url);
+  const likesdata = await fetchList(urli);
 
   const cardContainer = document.querySelector('.container-cards');
   cardContainer.innerHTML = '';
