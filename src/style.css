@@ -1,3 +1,55 @@
-* {
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --myfont: 'Roboto', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: auto;
+}
+
+header {
+  margin: 0;
+}
+
+.navigation-bar {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  background-image: url('./Images/KYMeal-logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+}
+
+h1 a {
+  text-decoration: none;
+  font-size: 50px;
+  font-family: var(--myfont);
+  color: darkgreen;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 24px;
+  font-family: var(--myfont);
+  color: black;
 }
