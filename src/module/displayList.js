@@ -20,7 +20,7 @@ const displayList = async () => {
     </div>
 </div>
 <div class="card-more">
-    <button type="button" class="card-button">Comments</button>
+    <button type="button" class="card-button" id=${data.idCategory}>Comments</button>
     <button type="button" class="card-button">Reservations</button>
 </div>
 </div>
