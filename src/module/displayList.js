@@ -1,5 +1,6 @@
 import fetchList from './fetchList.js';
 import { displayLike } from './aboutLikes.js';
+import countItems from './countItems.js';
 
 const displayList = async () => {
   const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
@@ -30,6 +31,7 @@ const displayList = async () => {
 </div>
 `).join('');
   cardContainer.innerHTML = cards;
+  countItems();
 
 };
 
