@@ -1,5 +1,4 @@
 import fetchList from './fetchList.js';
-
 import { displayLike } from './aboutLikes.js';
 
 const displayList = async () => {
@@ -31,6 +30,7 @@ const displayList = async () => {
 </div>
 `).join('');
   cardContainer.innerHTML = cards;
+
 };
 
 export default displayList;
