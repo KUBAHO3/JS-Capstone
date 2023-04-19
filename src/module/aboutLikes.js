@@ -1,6 +1,4 @@
 import postLike from './postLike.js';
-import fetchList from './fetchList.js';
-
 
 const urli = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/gXvWpQoPOY3Cj1qr1TRg/likes';
 
@@ -11,7 +9,7 @@ const displayLike = (id, likesdata) => {
     return itemsID[0].likes ? itemsID[0].likes : 0;
   }
 
-function updateLikes(){
+const updateLikes = () => {
   const cardContainer = document.querySelector('.container-cards');
       
   cardContainer.addEventListener("click", (e) => {
