@@ -23,7 +23,7 @@ const displayList = async () => {
     </p>
     <div class="like" >
         <i class="fa-regular fa-heart" id=${data.idCategory}></i>
-        <span class="like-count" >${displayLike(data.idCategory, likesdata)} likes</span>
+        <span class="like-count" id=${displayLike(data.idCategory, likesdata)}>${displayLike(data.idCategory, likesdata)} likes</span>
     </div>
 </div>
 <div class="card-more">

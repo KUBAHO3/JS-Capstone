@@ -5,7 +5,6 @@ const urli = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi
 
 const displayLike = (id, likesdata) => {
     const itemsID = likesdata.filter((element) => element.item_id === id);
-    console.log(itemsID[0].likes);
     return itemsID[0].likes ? itemsID[0].likes : 0;
   }
 
@@ -15,7 +14,9 @@ const updateLikes = () => {
   cardContainer.addEventListener("click", (e) => {
     if(e.target.className === 'fa-regular fa-heart'){
       postLike(urli, e.target.id);
-      console.log('clicked: ',e.target.id);
+      let newlike = Number(e.target.nextElementSibling.id)+1;
+      e.target.nextElementSibling.innerHTML = newlike.toString()+" likes";
+      e.target.nextElementSibling.id = newlike.toString();
     }
   });
 
