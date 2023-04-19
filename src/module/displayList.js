@@ -32,7 +32,6 @@ const displayList = async () => {
 `).join('');
   cardContainer.innerHTML = cards;
   countItems();
-
 };
 
 export default displayList;
