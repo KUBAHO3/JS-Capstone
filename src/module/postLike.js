@@ -9,7 +9,7 @@ const postLike = async (url, item_id) => {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
-    return res.json();
+    return 'created successfully';
   } catch (error) {
     return false;
   }
