@@ -1,5 +1,7 @@
 import fetchList from './fetchList.js';
 
+import { displayLike } from './aboutLikes.js';
+
 const displayList = async () => {
   const url = 'https://www.themealdb.com/api/json/v1/1/categories.php';
   const urli = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/gXvWpQoPOY3Cj1qr1TRg/likes';
@@ -7,12 +9,8 @@ const displayList = async () => {
   const category = await fetchList(url);
   const likesdata = await fetchList(urli);
 
-  function displayLike(id) {
-    const itemsID = likesdata.filter((element) => element.item_id === id);
-    return itemsID[0].likes ? itemsID[0].likes : 0;
-  }
-
   const cardContainer = document.querySelector('.container-cards');
+
   cardContainer.innerHTML = '';
   const cards = category.categories.map((data) => `
 <div class="card">
@@ -21,9 +19,9 @@ const displayList = async () => {
     <p class="card-name">
         ${data.strCategory}
     </p>
-    <div class="like">
-        <i class="fa-regular fa-heart"></i>
-        <span class="like-count">${displayLike(data.idCategory)} likes</span>
+    <div class="like" >
+        <i class="fa-regular fa-heart" id=${data.idCategory}></i>
+        <span class="like-count" id=${displayLike(data.idCategory, likesdata)}>${displayLike(data.idCategory, likesdata)} likes</span>
     </div>
 </div>
 <div class="card-more">
