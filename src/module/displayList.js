@@ -26,7 +26,7 @@ const displayList = async () => {
 </div>
 <div class="card-more">
     <button type="button" class="card-button" id=${data.idCategory}>Comments</button>
-    <button type="button" class="card-button">Reservations</button>
+    <button type="button" class="card-button1">Reservations</button>
 </div>
 </div>
 `).join('');
