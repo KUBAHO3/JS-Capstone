@@ -15,7 +15,8 @@ describe('countItems', () => {
   test('updates category title with correct count', () => {
     countItems();
 
-    
+    const categoryTitle = document.querySelector('#categoriess');
+    expect(categoryTitle.textContent).toBe('Categories(3)');
   });
 
   test('does not update category title if no cards are present', () => {
@@ -26,6 +27,7 @@ describe('countItems', () => {
 
     countItems();
 
-    
+    const categoryTitle = document.querySelector('#categoriess');
+    expect(categoryTitle.textContent).toBe('Categories(0)');
   });
 });
