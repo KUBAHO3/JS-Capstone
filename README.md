@@ -126,7 +126,7 @@ This is JavaScript capstone project prepared by microverse by the purpose of tes
 
 ## 🦻 WalkThrough Video <a name="#walkthrough-demo"></a>
 
--  Comming Soon...
+- [Walk Through Video](https://www.loom.com/share/52748d4a25b144b5bdc4a17d68f02bdc)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
