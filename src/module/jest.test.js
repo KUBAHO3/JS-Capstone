@@ -12,5 +12,20 @@ describe('countItems', () => {
     `;
   });
 
+  test('updates category title with correct count', () => {
+    countItems();
 
+    
+  });
+
+  test('does not update category title if no cards are present', () => {
+    document.body.innerHTML = `
+      <div class="container-cards"></div>
+      <h2 id="categoriess"></h2>
+    `;
+
+    countItems();
+
+    
+  });
 });
