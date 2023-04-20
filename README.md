@@ -118,7 +118,7 @@ This is JavaScript capstone project prepared by microverse by the purpose of tes
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Comming Soon...
+- [Live Demo](https://kubaho3.github.io/JS-Capstone/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
