@@ -7,9 +7,13 @@ import postComments from './module/postComments.js';
 import newComment from './module/newComment.js';
 import countComments from './module/countComments.js';
 import fetchList from './module/fetchList.js';
+// import countItems from './module/countItems.js';
+import { updateLikes } from './module/aboutLikes.js';
 
 displayList();
 addHeaderToPage();
+updateLikes();
+// countItems();
 
 const openModal = document.querySelector('.modal');
 const openModalButton = document.querySelector('.container-cards');

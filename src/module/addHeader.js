@@ -6,7 +6,7 @@ const addHeader = `<nav class="navigation-bar">
 <h1><a href="#">KYMeal</a></h1>
 </div>
 <ul class="nav-links">
-  <li><a href="#">Categories</a></li>
+  <li><a href="#" id="categoriess">Categories</a></li>
   <li><a href="#">Recipes</a></li>
   <li><a href="#">About us</a></li>
 </ul>
