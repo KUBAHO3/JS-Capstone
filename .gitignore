@@ -1,2 +1,3 @@
 # .gitignore
 node_modules/
+src/module/jest.test.js
