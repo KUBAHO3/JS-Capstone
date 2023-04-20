@@ -103,6 +103,89 @@ h1 a {
   box-shadow: 3px 3px black;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 2;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  border-radius: 20px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  width: 45%;
+  max-width: 50%;
+  padding: 24px;
+  height: 80%;
+  overflow-y: scroll;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-head {
+  display: flex;
+  justify-content: center;
+}
+
+.close-button {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comments {
+  font-family: var(--myfont);
+  font-size: 24px;
+}
+
+.add-comment {
+  font-family: var(--myfont);
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.received {
+  width: fit-content;
+  display: flex;
+  margin: auto;
+  font-family: var(--myfont);
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #484849;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 .container-footer {
   padding-left: 2.5%;
   padding-right: 2.5%;
