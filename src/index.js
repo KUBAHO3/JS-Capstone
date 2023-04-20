@@ -2,9 +2,13 @@ import './style.css';
 import addHeaderToPage from './module/addHeader.js';
 import Modal from './module/displayPopup.js';
 import displayList from './module/displayList.js';
+// import countItems from './module/countItems.js';
+import { updateLikes } from './module/aboutLikes.js';
 
 displayList();
 addHeaderToPage();
+updateLikes();
+// countItems();
 
 const openModal = document.querySelector('.modal');
 const openModalButton = document.querySelector('.container-cards');
