@@ -11,3 +11,11 @@ test('count items', () => {
   const nbOfComments = countComments(myListOfComments);
   expect(nbOfComments).toBe(4);
 });
+test('count 0 items', () => {
+  document.body.innerHTML = `<ul class="comments-lists">
+                                
+                            </ul>`;
+  const myListOfComments = document.querySelector('.comments-lists');
+  const nbOfComments = countComments(myListOfComments);
+  expect(nbOfComments).toBe(0);
+});
